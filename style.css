@@ -3,6 +3,7 @@ body {
     font-family: "Arial";
 }
 
+
 .header-container {
     position: relative;
     width: 1600px;
@@ -26,6 +27,35 @@ body {
     /* left: 1450px; */
     right: 30px;
     max-width: calc(7.5% * 1600px); /* ロゴの最大幅を親の幅に合わせて調整 */
+}
+
+
+@media screen and (max-width:375px) {
+    .header-container {
+        position: relative;
+        width: 1600px;
+        height: 600px;
+        /* max-width: 100%;; */
+        /* height: auto; */
+    }
+
+    .header-img {
+        width: 1600px;
+        height: 600px;
+        object-fit: cover;
+        /* max-width: 100%; */
+        /* height: auto; */
+    }
+
+    .header-logo {
+        position: absolute;
+        width: 30%;
+        height: auto;
+        top: 30px;
+        /* left: 1450px; */
+        right: 30px;
+        max-width: calc(7.5% * 1600px); /* ロゴの最大幅を親の幅に合わせて調整 */
+    }
 }
 
 .text1-container {
@@ -58,6 +88,43 @@ body {
     line-height: 21px;
     color: #24292E;
 }
+
+@media screen and (max-width:375px) {
+    .text1-container {
+        width: 295px;
+        height: 56px;
+        top: 680px;
+        left: 513px;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+
+    .text1-container h1 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #24292E;
+    }
+
+    .text2-container {
+        width: 337px;
+        height: 84px;
+        top: 728px;
+        left: 522px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .text2-container p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #24292E;
+    }
+}
+
+
+
 
 .left-right-container {
     display: flex;
@@ -128,7 +195,77 @@ body {
 }
 
 
+@media screen and (max-width:375px) {
+    .left-right-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 7%;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+    }
 
+    .left-container, .right-container {
+        position: relative;
+        top: 40px;
+    }
+
+    .left-img, .right-img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    .overlay {
+        position: absolute; /* 画像の上に重ねるためabsoluteに設定 */
+        /* top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; */
+        /* background-color: blue; */
+        inset: 0;
+        display: grid;
+        place-items: center;
+    }
+
+    .text3-left-container, .text3-right-container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 85%;
+        height: 30%;
+        background-color: black;
+        opacity: 0.5;
+        text-align: center;
+    }
+
+    .text3-top-container {
+        width: 100%;
+    }
+
+    .text3-top-container h1 {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 23px;
+        color: white;
+    }
+
+    .text3-bottom-container {
+        width: 100%;
+        /* height: 42px; */
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .text3-bottom-container p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: white;
+        margin: 0;
+    }
+}
 
 
 
