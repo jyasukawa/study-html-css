@@ -540,6 +540,7 @@ body {
 .footer-logo {
     display: grid;           /* グリッドレイアウトを有効にする */
     place-items: center;
+    /* margin: 0 auto; */
     /* width: 120px;
     height: 40px; */
     /* background-color: aqua; */
@@ -599,4 +600,40 @@ ul {
 li::before {
     content: "- ";         /* ハイフンをリストアイテムの前に追加 */
     margin-right: 5px;
+}
+
+@media screen and (max-width:375px) {
+    .footer-container {
+        width: 375px;
+        height: 500px;
+        gap: 5%;
+        justify-items: start;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-logo {
+        margin: 0 auto;
+    }
+
+    .f-text1 {
+        width: 151px;
+        height: 120px;
+    }
+
+    .f-text1 li{
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 24px;
+    }
+
+    .f-text2 {
+        width: 310px;
+        height: 120px;
+    }
+
+    .last-p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+    }
 }
