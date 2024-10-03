@@ -319,7 +319,26 @@ body {
 }
 
 
+@media screen and (max-width:375px) {
+    .center-container {
+        padding-top: 10px;
+        margin-top: 80px;
+        /* width: 1600px; */
+        /* height: 520px; */
+        /* max-width: 100%; */
+        /* background-color: blue; */
+        background-image: url('img/Mask-group2.png');
+        /* background-size: 100% 100%; */
+        background-size: cover; /* 画像を親要素に収めつつ、アスペクト比を保持 */
+        background-position: center; /* 画像の中央部分を表示 */
+        background-repeat: no-repeat; /* 画像の繰り返しを無効にする */
+    }
 
+    .center-p {
+        width: 337px;
+        height: 84px;
+    }
+}
 
 
 
