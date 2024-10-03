@@ -3,6 +3,7 @@ body {
     font-family: "Arial";
 }
 
+
 .header-container {
     position: relative;
     width: 1600px;
@@ -26,6 +27,35 @@ body {
     /* left: 1450px; */
     right: 30px;
     max-width: calc(7.5% * 1600px); /* ロゴの最大幅を親の幅に合わせて調整 */
+}
+
+
+@media screen and (max-width:375px) {
+    .header-container {
+        position: relative;
+        width: 1600px;
+        height: 600px;
+        /* max-width: 100%;; */
+        /* height: auto; */
+    }
+
+    .header-img {
+        width: 1600px;
+        height: 600px;
+        object-fit: cover;
+        /* max-width: 100%; */
+        /* height: auto; */
+    }
+
+    .header-logo {
+        position: absolute;
+        width: 30%;
+        height: auto;
+        top: 30px;
+        /* left: 1450px; */
+        right: 30px;
+        max-width: calc(7.5% * 1600px); /* ロゴの最大幅を親の幅に合わせて調整 */
+    }
 }
 
 .text1-container {
@@ -58,6 +88,43 @@ body {
     line-height: 21px;
     color: #24292E;
 }
+
+@media screen and (max-width:375px) {
+    .text1-container {
+        width: 295px;
+        height: 56px;
+        top: 680px;
+        left: 513px;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+
+    .text1-container h1 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #24292E;
+    }
+
+    .text2-container {
+        width: 337px;
+        height: 84px;
+        top: 728px;
+        left: 522px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .text2-container p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #24292E;
+    }
+}
+
+
+
 
 .left-right-container {
     display: flex;
@@ -128,7 +195,77 @@ body {
 }
 
 
+@media screen and (max-width:375px) {
+    .left-right-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 7%;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+    }
 
+    .left-container, .right-container {
+        position: relative;
+        top: 40px;
+    }
+
+    .left-img, .right-img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    .overlay {
+        position: absolute; /* 画像の上に重ねるためabsoluteに設定 */
+        /* top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; */
+        /* background-color: blue; */
+        inset: 0;
+        display: grid;
+        place-items: center;
+    }
+
+    .text3-left-container, .text3-right-container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 85%;
+        height: 30%;
+        background-color: black;
+        opacity: 0.5;
+        text-align: center;
+    }
+
+    .text3-top-container {
+        width: 100%;
+    }
+
+    .text3-top-container h1 {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 23px;
+        color: white;
+    }
+
+    .text3-bottom-container {
+        width: 100%;
+        /* height: 42px; */
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .text3-bottom-container p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: white;
+        margin: 0;
+    }
+}
 
 
 
@@ -182,6 +319,26 @@ body {
 }
 
 
+@media screen and (max-width:375px) {
+    .center-container {
+        padding-top: 10px;
+        margin-top: 80px;
+        /* width: 1600px; */
+        /* height: 520px; */
+        /* max-width: 100%; */
+        /* background-color: blue; */
+        background-image: url('img/Mask-group2.png');
+        /* background-size: 100% 100%; */
+        background-size: cover; /* 画像を親要素に収めつつ、アスペクト比を保持 */
+        background-position: center; /* 画像の中央部分を表示 */
+        background-repeat: no-repeat; /* 画像の繰り返しを無効にする */
+    }
+
+    .center-p {
+        width: 337px;
+        height: 84px;
+    }
+}
 
 
 
@@ -198,9 +355,6 @@ body {
     padding-top: 5%;
     padding-bottom: 5%;
 }
-
-
-
 
 .top {
     display: flex;
@@ -253,6 +407,8 @@ body {
     font-size: 8px;
     line-height: 10px;
 }
+
+
 
 
 
@@ -324,6 +480,40 @@ body {
 
 
 
+@media screen and (max-width:375px) {
+    .last-container {
+        padding-top: 7%;
+        padding-bottom: 12%;
+    }
+
+    .top {
+        flex-direction: column;
+        display: grid;
+        place-items: center;
+    }
+
+    .bottom {
+        flex-direction: column;
+        display: grid;
+        place-items: center;
+    }
+
+    .top-left {
+        width: 90%;
+    }
+
+    .top-right {
+        width: 90%;
+        /* text-align: center; */
+    }
+
+    .tr-p p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
 
 
 
@@ -350,6 +540,7 @@ body {
 .footer-logo {
     display: grid;           /* グリッドレイアウトを有効にする */
     place-items: center;
+    /* margin: 0 auto; */
     /* width: 120px;
     height: 40px; */
     /* background-color: aqua; */
@@ -409,4 +600,40 @@ ul {
 li::before {
     content: "- ";         /* ハイフンをリストアイテムの前に追加 */
     margin-right: 5px;
+}
+
+@media screen and (max-width:375px) {
+    .footer-container {
+        width: 375px;
+        height: 500px;
+        gap: 5%;
+        justify-items: start;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-logo {
+        margin: 0 auto;
+    }
+
+    .f-text1 {
+        width: 151px;
+        height: 120px;
+    }
+
+    .f-text1 li{
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 24px;
+    }
+
+    .f-text2 {
+        width: 310px;
+        height: 120px;
+    }
+
+    .last-p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+    }
 }
