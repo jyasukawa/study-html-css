@@ -1,0 +1,412 @@
+body {
+    margin: 0px;
+    font-family: "Arial";
+}
+
+.header-container {
+    position: relative;
+    width: 1600px;
+    height: 600px;
+    max-width: 100%;
+    height: auto;
+}
+
+.header-img {
+    width: 1600px;
+    height: 600px;
+    max-width: 100%;
+    height: auto;
+}
+
+.header-logo {
+    position: absolute;
+    width: 7.5%;
+    height: auto;
+    top: 30px;
+    /* left: 1450px; */
+    right: 30px;
+    max-width: calc(7.5% * 1600px); /* ロゴの最大幅を親の幅に合わせて調整 */
+}
+
+.text1-container {
+    width: 574px;
+    height: 28px;
+    top: 680px;
+    left: 513px;
+    margin: 0 auto;
+}
+
+.text1-container h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #24292E;
+}
+
+.text2-container {
+    width: 556px;
+    height: 42px;
+    top: 728px;
+    left: 522px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.text2-container p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #24292E;
+}
+
+.left-right-container {
+    display: flex;
+    gap: 5%;
+    padding: 0 10%;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.left-container, .right-container {
+    position: relative;
+    top: 40px;
+}
+
+.left-img, .right-img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.overlay {
+    position: absolute; /* 画像の上に重ねるためabsoluteに設定 */
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+    /* background-color: blue; */
+    inset: 0;
+    display: grid;
+    place-items: center;
+}
+
+.text3-left-container, .text3-right-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50%;
+    /* height: 20%; */
+    background-color: black;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.text3-top-container {
+    width: 100%;
+}
+
+.text3-top-container h1 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: white;
+}
+
+.text3-bottom-container {
+    width: 100%;
+    /* height: 42px; */
+    margin: 0 auto;
+    max-width: 100%;;
+}
+
+.text3-bottom-container p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+}
+
+
+
+
+
+
+
+.center-container {
+    padding-top: 10px;
+    margin-top: 80px;
+    width: 1600px;
+    height: 520px;
+    max-width: 100%;
+    /* background-color: blue; */
+    background-image: url('img/Mask-group2.png');
+    background-size: 100% 100%;
+}
+
+.center-h1 {
+    width: 181px;
+    height: 28px;
+    margin: 0 auto;
+}
+
+.center-h1 h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27.6px;
+}
+
+.center-p {
+    width: 556px;
+    height: 42px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.center-p p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.center-btn {
+    display: block;
+    width: 132px;
+    height: 42px;
+    margin: 0 auto;
+    text-align: center;
+    /* background-color: blue; */
+    padding: 14px 14px 14px 14px;
+    border: 1px solid black;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+.last-container {
+    position: relative;
+    width: 1600px;
+    height: 1240px;
+    margin-top: 50px;
+    max-width: 100%;
+    height: auto;
+    background-color: #F5F5F5;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+
+
+.top {
+    display: flex;
+    gap: 3%;
+    /* padding: 0 10%; */
+    max-width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    /* background-color: orange; */
+    padding-bottom: 7%;
+}
+
+.top-left {
+    width: 30%;
+    height: auto;
+    /* background-color: red; */
+}
+
+.top-right {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 30%;
+    height: auto;
+    /* background-color: green; */
+}
+
+.tr-h1 {
+    width: 100%;
+    height: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tr-h1 h1 {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 27.6px;
+}
+
+.tr-p {
+    width: 100%;
+    height: 22%;
+    word-wrap: break-word; /* 長い単語を途中で折り返す */
+    overflow: hidden; /* はみ出た部分を非表示にする */
+}
+
+.tr-p p {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+}
+
+
+
+
+
+
+.bottom {
+    display: flex;
+    gap: 3%;
+    /* padding: 0 10%; */
+    max-width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    /* background-color: yellowgreen; */
+}
+
+.top-left {
+    width: 30%;
+    height: auto;
+    /* background-color: red; */
+}
+
+.top-right {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 30%;
+    height: auto;
+    /* background-color: green; */
+}
+
+.tr-h1 {
+    width: 100%;
+    height: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tr-h1 h1 {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 27.6px;
+}
+
+.tr-p {
+    width: 100%;
+    height: 22%;
+    word-wrap: break-word; /* 長い単語を途中で折り返す */
+    overflow: hidden; /* はみ出た部分を非表示にする */
+}
+
+.tr-p p {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+}
+
+.bottom-btn {
+    display: block;
+    width: 100px;
+    height: 40px;
+    margin: 10px auto;
+    text-align: center;
+    /* background-color: blue; */
+    padding: 14px 14px 14px 14px;
+    border: 1px solid black;
+    background-color: transparent;
+}
+
+
+
+
+
+
+.footer-container {
+    /* display: flex; */
+    display: grid;
+    place-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 10%;
+    width: 1600px;
+    max-width: 100%;
+    /* min-height: 100px; */
+    background-color: black;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    padding-right: 10%;
+    padding-left: 10%;
+    box-sizing: border-box;
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-logo {
+    display: grid;           /* グリッドレイアウトを有効にする */
+    place-items: center;
+    /* width: 120px;
+    height: 40px; */
+    /* background-color: aqua; */
+}
+
+.footer-logo-img {
+    width: 100%;
+}
+
+.footer-container1 h1 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+}
+
+.footer-container1 p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: white;
+}
+
+.footer-container2 h1 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+}
+
+.footer-container2 p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: white;
+}
+
+.f-text1 {
+    color: white;
+    /* width: 151px;
+    height: 120px; */
+}
+
+/* .f-text2 {
+    width: 310px;
+    height: 120px;
+} */
+
+.last-p {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none; /* デフォルトのリストスタイルを無効にする */
+    padding: 0;
+}
+li::before {
+    content: "- ";         /* ハイフンをリストアイテムの前に追加 */
+    margin-right: 5px;
+}
