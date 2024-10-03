@@ -4,7 +4,9 @@ body {
 
 .header-container {
     position: relative;
-    width: 100%;
+    width: 1600px;
+    height: 600px;
+    max-width: 100%;
     height: auto;
 }
 
@@ -22,6 +24,7 @@ body {
     top: 30px;
     /* left: 1450px; */
     right: 30px;
+    max-width: calc(7.5% * 1600px); /* ロゴの最大幅を親の幅に合わせて調整 */
 }
 
 .text1-container {
