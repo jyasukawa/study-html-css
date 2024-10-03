@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    font-family: "Arial";
 }
 
 .header-container {
@@ -36,7 +37,6 @@ body {
 }
 
 .text1-container h1 {
-    font-family: "Arial";
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -53,7 +53,6 @@ body {
 }
 
 .text2-container p {
-    font-family: "Arial";
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -108,7 +107,6 @@ body {
 }
 
 .text3-top-container h1 {
-    font-family: "Arial";
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
@@ -123,7 +121,6 @@ body {
 }
 
 .text3-bottom-container p {
-    font-family: "Arial";
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -154,7 +151,6 @@ body {
 }
 
 .center-h1 h1 {
-    font-family: Arial;
     font-weight: 700;
     font-size: 24px;
     line-height: 27.6px;
@@ -168,7 +164,6 @@ body {
 }
 
 .center-p p {
-    font-family: Arial;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -241,7 +236,6 @@ body {
 }
 
 .tr-h1 h1 {
-    font-family: Arial;
     font-weight: 700;
     font-size: 15px;
     line-height: 27.6px;
@@ -255,7 +249,6 @@ body {
 }
 
 .tr-p p {
-    font-family: Arial;
     font-weight: 400;
     font-size: 8px;
     line-height: 10px;
@@ -299,7 +292,6 @@ body {
 }
 
 .tr-h1 h1 {
-    font-family: Arial;
     font-weight: 700;
     font-size: 15px;
     line-height: 27.6px;
@@ -313,7 +305,6 @@ body {
 }
 
 .tr-p p {
-    font-family: Arial;
     font-weight: 400;
     font-size: 8px;
     line-height: 10px;
@@ -369,7 +360,6 @@ body {
 }
 
 .footer-container1 h1 {
-    font-family: Arial;
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
@@ -377,7 +367,6 @@ body {
 }
 
 .footer-container1 p {
-    font-family: Arial;
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
@@ -385,7 +374,6 @@ body {
 }
 
 .footer-container2 h1 {
-    font-family: Arial;
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
@@ -393,7 +381,6 @@ body {
 }
 
 .footer-container2 p {
-    font-family: Arial;
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
