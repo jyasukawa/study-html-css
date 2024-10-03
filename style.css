@@ -334,9 +334,11 @@ body {
 
 
 .footer-container {
-    display: flex;
-    justify-content: center; /* 横方向の中央揃え */
-    align-items: center;
+    /* display: flex; */
+    display: grid;
+    place-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     gap: 10%;
     width: 1600px;
     max-width: 100%;
@@ -347,13 +349,15 @@ body {
     padding-right: 10%;
     padding-left: 10%;
     box-sizing: border-box;
+
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .footer-logo {
     display: grid;           /* グリッドレイアウトを有効にする */
     place-items: center;
-    width: 120px;
-    height: 40px;
+    /* width: 120px;
+    height: 40px; */
     /* background-color: aqua; */
 }
 
@@ -393,16 +397,16 @@ body {
     color: white;
 }
 
-.f-text1 {
+/* .f-text1 {
     width: 151px;
     height: 120px;
-}
+} */
 
-.f-text2 {
+/* .f-text2 {
     width: 310px;
     height: 120px;
-}
+} */
 
-footer p {
+.last-p {
     text-align: center;
 }
